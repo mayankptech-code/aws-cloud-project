@@ -2,73 +2,105 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>AWS Cloud Project | Mayank</title>
+    <title>AWS Cloud Project | Mayank Pathak</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <style>
         body {
             margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
             color: #ffffff;
             text-align: center;
         }
 
         header {
-            padding: 40px 20px;
-            background: rgba(0, 0, 0, 0.3);
+            padding: 50px 20px;
+            background: rgba(0, 0, 0, 0.35);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.5);
         }
 
-        h1 {
-            font-size: 2.5rem;
+        header h1 {
+            font-size: 3rem;
             margin-bottom: 10px;
+            color: #ffd700;
         }
 
-        p {
-            font-size: 1.1rem;
+        header p {
+            font-size: 1.2rem;
             opacity: 0.9;
         }
 
         .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             padding: 40px 20px;
+            gap: 20px;
         }
 
         .card {
             background: rgba(255, 255, 255, 0.08);
-            margin: 20px auto;
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
             padding: 25px;
-            max-width: 600px;
-            border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+            max-width: 350px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
         }
 
-        ul {
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.7);
+        }
+
+        .card h2 {
+            color: #ffd700;
+            margin-bottom: 15px;
+        }
+
+        .card ul {
             list-style: none;
             padding: 0;
+            text-align: left;
         }
 
-        ul li {
-            padding: 8px 0;
+        .card ul li {
+            margin: 8px 0;
             font-size: 1rem;
         }
 
         footer {
-            margin-top: 40px;
-            padding: 15px;
+            margin-top: 50px;
+            padding: 20px;
+            background: rgba(0,0,0,0.35);
             font-size: 0.9rem;
-            background: rgba(0, 0, 0, 0.4);
         }
+
+        a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
     </style>
 </head>
 
 <body>
 
 <header>
-    <h1>🚀 AWS Cloud Infrastructure Project</h1>
+    <h1>🚀 AWS Cloud Project</h1>
     <p>Highly Available & Scalable Web Application</p>
 </header>
 
 <div class="container">
+
     <div class="card">
         <h2>🔧 Services Used</h2>
         <ul>
@@ -84,19 +116,18 @@
 
     <div class="card">
         <h2>📌 Project Overview</h2>
-        <p>
-            This project demonstrates a production-style AWS architecture
-            where a web application is deployed on EC2 instances running
-            in private subnets behind an Application Load Balancer with
-            Auto Scaling enabled for high availability.
-        </p>
+        <p>This project demonstrates a production-style AWS architecture where a web application is deployed on EC2 instances in private subnets behind an Application Load Balancer with Auto Scaling enabled for high availability.</p>
     </div>
 
     <div class="card">
-        <h2>👨‍💻 Created By</h2>
+        <h2>👨‍💻 Author</h2>
         <p>Mayank Pathak</p>
+        <p>B.Tech CSE Graduate from <strong>Uttarakhand Technical University, Dehradun</strong></p>
         <p>AWS Cloud / DevOps Enthusiast</p>
+        <p>🌐 <a href="https://mayankptech-code.github.io/aws-cloud-project/" target="_blank">Live Demo</a></p>
+        <p>📸 Instagram: <a href="https://www.instagram.com/just.mayank05" target="_blank">@just.mayank05</a></p>
     </div>
+
 </div>
 
 <footer>
